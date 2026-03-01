@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>zappy</title>
 <style>
 body {
   margin: 0;
@@ -52,12 +53,21 @@ ul li a:hover {
 <p>Some text on the website.</p>
 
 
-<a href="rewad" download> 
-  <img src="" width="120px" alt="download">
-</a>
+<h2>Login</h2>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+<button onclick="register()">Register</button>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
+
 
 
 
