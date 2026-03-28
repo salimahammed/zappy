@@ -1,10 +1,10 @@
 
 <script>
   let images = [
-    "img1.jpg",
-    "img2.jpg",
-    "img3.jpg",
-    "img4.jpg"
+    "01.png",
+    "1.png",
+    "2.png",
+    "3.png"
   ];
 
   let i = 0;
