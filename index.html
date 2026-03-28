@@ -1,49 +1,93 @@
-</html>
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/x-icon" href="0260317_164122.png">
-  <title>LOVE Talecom</title>
+<title>Love</title>
+<link rel="icon" type="image/x-icon" href="logo.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body {
-  margin: 0;
-  padding: 0;
- 
-}
 
-h2, p {
-  margin: 10px;
-}
+body {margin:0;}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar {
   overflow: hidden;
-  background-color: #f72f07;
+  background-color: #FA3A14;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-ul li {
+.navbar a {
   float: left;
-}
-
-ul li a {
   display: block;
-  color: white;
+  color: #f2f2f2;
   text-align: center;
-  padding: 14px 60px;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 18px;
 }
 
-ul li a:hover {
-  background-color: #111111;
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
-  /* Style the footer */
+
+.main {
+  padding: 18px;
+  margin-top: 30px;
+  height: 600px; /* Used in this example to enable scrolling */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}
+
+
+
+/* Style the footer */
 footer {
-  background-color:  #f72f07;
+  background-color: #FA3A14;
   padding: 10px;
   text-align: center;
   color: white;
@@ -55,66 +99,135 @@ footer {
     width: 100%;
     height: auto;
   }
+}
+
+
 </style>
 </head>
 <body>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">Explore</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li style="float:"right" ><a href="comeing soon" download>Download</a></li>
-</ul>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="recharg.html">Recharge</a>
+  <a href="#contact">Contact</a>
 
+
+  <div style="float: right; text-align: center;">
+
+  	<a href="#news">Eng </a>
+  	<a>|</a>
+  	<a href="#news"> বাংলা </a>
+  	<a href="#news">Downlod </a>
+</div>
+
+  </div>
   
+<div class="main" style="text-align: center;">
+
+<img src="01.png">
+
 <h2>Total Visitors: <span id="count">Loading...</span></h2>
-  <h2>Total Visitors: <span id="count">Loading...</span></h2>
-  <h2>Total Visitors: <span id="count">Loading...</span></h2>
-  <h2>Total Visitors: <span id="count">Loading...</span></h2>
-                                                     
 
 <script>
-  fetch("https://api.countapi.xyz/hit/zappy/visits")
+  fetch("https://api.countapi.xyz/hit/Love/visits")
     .then(response => response.json())
     .then(data => {
       document.getElementById("count").innerText = data.value;
     });
 </script>
-<img src="IMG_20260324_214638.jpg" class="mx-auto d-block" style="withe:100% hight:100%" >
+
+<h1>অনলাইন গেমের নামের অবৈধ জুয়া খেলবেন না, সব হারাবেন</h1>
+ <h1>Fixed Top Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+</div>
+
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
   
-<h2>Horizontal Navbar Using Float</h2>
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Meetings</p>
+    </div>
+  </div>
+</div>
 
-<p>Some text on the website.</p>
+<div class="main" style="background-color: #8AFFEB;" >
+ <h1>Fixed Top Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
 
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
 
-<h2>Login</h2>
+</div>
+<div class="main" style="background-color: #8AB5FF;" >
+ <h1>Fixed Top Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
 
-<input type="email" id="email" placeholder="Email"><br><br>
-<input type="password" id="password" placeholder="Password"><br><br>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
 
-<button onclick="login()">Login</button>
-<button onclick="register()">Register</button>
+</div>
+<div class="main" style="background-color: #BB8AFF;" >
+ <h1>Fixed Top Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
 
-  <footer>
-  <h1>LOVE Talecom</h1>
-    <p>Selim Ahamed</p>
-    
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</div>
+
+<footer>
+	<h1>Love</h1>
+  <p>Selim Ahamed</p>
 </footer>
-
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="app.js"></script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
