@@ -66,6 +66,17 @@ footer {
   <li><a href="#about">About</a></li>
   <li style="float:"right" ><a href="comeing soon" download>Download</a></li>
 </ul>
+
+  
+<h2>Total Visitors: <span id="count">Loading...</span></h2>
+
+<script>
+  fetch("https://api.countapi.xyz/hit/LOVE-Talecom/visits")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("count").innerText = data.value;
+    });
+</script>
 <img src="IMG_20260324_214638.jpg" class="mx-auto d-block" style="withe:100% hight:100%" >
   
 <h2>Horizontal Navbar Using Float</h2>
