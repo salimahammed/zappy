@@ -5,6 +5,9 @@
 <title>Love</title>
 <link rel="icon" type="image/x-icon" href="logo.png">
 
+<link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 	body {margin:0;}
 
@@ -36,6 +39,79 @@
   margin-top: 30px;
   height: 600px; /* Used in this example to enable scrolling */
 }
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
 </style>
 
 </head>
@@ -44,7 +120,7 @@
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="#Recharge"> Recharge</a>
-  <a href="#contact">Contact</a>
+  <a href="about.html">About</a>
 
 
   <div style="float: right; text-align: center;">
@@ -52,35 +128,55 @@
   	<a href="#news">Eng </a>
   	<a>|</a>
   	<a href="#news"> বাংলা </a>
-  	<a href="#news">Downlod </a>
+  	<a href="#news">Love Telecom </a>
 </div>
 
 </div>
+<div>
+  
+ <h1>Selim Ahamed</h1>
 
-<br><br>
-<div class="contact" style="background-color: #BB8AFF; text-align: center;">
+
+
+
+</div>
 	
-	<p>selim</p>
-<img src="icon/money.png" style="width: 60px; padding: 40px 80px;">
+  <div>
+<h1>Services</h1>
 
-<input type="text" id="Number" value="Mobile Number">
-<select name="cars" id="cars">
-    <option value="gp">GP</option>
-    <option value="banglalink">Banglalink</option>
-    <option value="robi">Robi</option>
-    <option value="airtel">Airtel</option>
-    <option value="taletolk">Taletock</option>
-  </select>
-
-  <select name="cars" id="cars">
-    <option value="gp">prepaid</option>
-    <option value="banglalink">postpaid</option>
-   
-  </select>
-<input type="text" id="Amount" value="Amount (TK)">
+<p>     মোবাইল রিচার্জ</p>
+<div class="container">
+  <div class="skills html">90%</div>
 </div>
 
+<p>ড্রাইভার প্যাক</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
 
+<p>বিদ্যুৎ বিল </p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>Bus-----Train------Air------ticket Online Love app</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+<br>
+
+
+
+<footer>
+  <h1>Love</h1>
+  <p>Selim Ahamed</p>
+  
+
+  <a href="https://play.google.com/store/apps/details?id=com.qaumitelecomd.user&pcampaignid=web_share">
+    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150">
+</a>
+
+</footer>
 
 
 
